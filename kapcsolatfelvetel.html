@@ -2,114 +2,97 @@
 <html lang="hu">
 <head>
 	<meta charset="UTF-8">
-	<title>Alíz Nails</title>
-	<style>body {
-        background: linear-gradient(to bottom, #4ecdc4, #43a8a5);
-        font-family: Arial, sans-serif;
-        color: #333;
-        margin: 0;
-        padding: 0;
-    }
-    
-    header {
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 20px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 1;
-    }
-    
-    h1 {
-        margin: 0;
-    }
-    
-    nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-    }
-    
-    nav li {
-        margin: 0 10px;
-    }
-    
-    nav a {
-        color: #333;
-        text-decoration: none;
-    }
-    
-    nav a:hover {
-        text-decoration: underline;
-    }
-    
-    main {
-        margin-top: 100px;
-        padding: 20px;
-    }
-    
-    section {
-        margin-bottom: 50px;
-    }
-    
-    h2 {
-        margin-top: 0;
-    }
-    
-    ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    li {
-        margin-right: 20px;
-        width: 300px;
-    }
-    
-    li:last-child {
-        margin-right: 0;
-    }
-    
-    a {
-        color: #333;
-        text-decoration: none;
-    }
-    
-    a:hover {
-        text-decoration: underline;
-    }
-    
-    img {
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 10px;
-    }
-    
-    footer {
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 20px;
-        margin-top: 50px;
-        text-align: center;
-    }
-    </style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Alíz Nails - Kapcsolat</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		body {
+			background-color: #c1dfee;
+		}
+		h1 {
+			font-size: 2.5rem;
+			margin-bottom: 2rem;
+			text-align: center;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		label {
+			font-size: 1.2rem;
+			margin-bottom: 0.5rem;
+		}
+		input[type="text"], textarea {
+			padding: 0.5rem;
+			border-radius: 5px;
+			border: none;
+			margin-bottom: 1rem;
+			font-size: 1.2rem;
+			width: 100%;
+			box-sizing: border-box;
+		}
+		input[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			padding: 0.5rem 1rem;
+			font-size: 1.2rem;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		input[type="submit"]:hover {
+			background-color: #555;
+		}
+		.contact-info {
+			text-align: center;
+			margin-top: 2rem;
+		}
+		.contact-info h2 {
+			font-size: 1.5rem;
+			margin-bottom: 1rem;
+		}
+		.contact-info p {
+			font-size: 1.2rem;
+		}
+	</style>
 </head>
 <body>
 	<header>
-		<h1>Alíz Nails</h1>
-		<nav>
-			<ul>
-				<li><a href="#">Kezdőlap</a></li>
-				<li><a href="#">Szolgáltatások</a></li>
-				<li><a href="#">Galéria</a></li>
-				<li><button id="kapcsolat-btn">Kapcsolatfelvétel</button></li>
-			</ul>
-		</nav>
+		<div class="container">
+			<h1>Alíz Nails</h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">Főoldal</a></li>
+					<li><a href="kapcsolatfelvetel.html">Kapcsolat</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
-	<center>
-		<p>Elérhetőség: Teszt telefon</p>
-	</center>
+	<main class="container">
+		<h1>Kapcsolat</h1>
+		<form>
+			<label for="name">Név</label>
+			<input type="text" id="name" name="name" placeholder="Írja be a nevét" required>
+			<label for="email">E-mail cím</label>
+			<input type="text" id="email" name="email" placeholder="Írja be az e-mail címét" required>
+			<label for="message">Üzenet</label>
+			<textarea id="message" name="message" placeholder="Írja ide az üzenetét" required></textarea>
+			<input type="submit" value="Küldés">
+		</form>
+		<div class="contact-info">
+            <p>Elérhetőség</p>
+			<p>Telefonszám: +36 30 123 4567</p>
+			<p>Helyszín: Ják Dózsa György utca 14</p>
+		</div>
+	</main>
+    <br>
+    <center>
+	<footer>
+		<div class="container">
+			<p>© 2023 Alíz Nails</p>
+		</div>
+	</footer>
+    </center>
+</body>
+</html>
