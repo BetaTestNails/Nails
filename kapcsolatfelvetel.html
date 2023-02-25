@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Alíz Nails - Kapcsolat</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		body {
+			background-color: #c1dfee;
+		}
+		h1 {
+			font-size: 2.5rem;
+			margin-bottom: 2rem;
+			text-align: center;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		label {
+			font-size: 1.2rem;
+			margin-bottom: 0.5rem;
+		}
+		input[type="text"], textarea {
+			padding: 0.5rem;
+			border-radius: 5px;
+			border: none;
+			margin-bottom: 1rem;
+			font-size: 1.2rem;
+			width: 100%;
+			box-sizing: border-box;
+		}
+		input[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			padding: 0.5rem 1rem;
+			font-size: 1.2rem;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		input[type="submit"]:hover {
+			background-color: #555;
+		}
+		.contact-info {
+			text-align: center;
+			margin-top: 2rem;
+		}
+		.contact-info h2 {
+			font-size: 1.5rem;
+			margin-bottom: 1rem;
+		}
+		.contact-info p {
+			font-size: 1.2rem;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1>Alíz Nails</h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">Főoldal</a></li>
+					<li><a href="kapcsolatfelvetel.html">Kapcsolat</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main class="container">
+		<h1>Kapcsolat</h1>
+		<form>
+			<label for="name">Név</label>
+			<input type="text" id="name" name="name" placeholder="Írja be a nevét" required>
+			<label for="email">E-mail cím</label>
+			<input type="text" id="email" name="email" placeholder="Írja be az e-mail címét" required>
+			<label for="message">Üzenet</label>
+			<textarea id="message" name="message" placeholder="Írja ide az üzenetét" required></textarea>
+			<input type="submit" value="Küldés">
+		</form>
+		<div class="contact-info">
+            <p>Elérhetőség</p>
+			<p>Telefonszám: +36 30 123 4567</p>
+			<p>Helyszín: Ják Dózsa György utca 14</p>
+		</div>
+	</main>
+    <br>
+    <center>
+	<footer>
+		<div class="container">
+			<p>© 2023 Alíz Nails</p>
+		</div>
+	</footer>
+    </center>
+</body>
+</html>
