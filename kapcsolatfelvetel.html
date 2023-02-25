@@ -2,97 +2,191 @@
 <html lang="hu">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Alíz Nails - Kapcsolat</title>
-	<link rel="stylesheet" href="style.css">
-	<style>
-		body {
-			background-color: #c1dfee;
-		}
-		h1 {
-			font-size: 2.5rem;
-			margin-bottom: 2rem;
-			text-align: center;
-		}
-		form {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-		}
-		label {
-			font-size: 1.2rem;
-			margin-bottom: 0.5rem;
-		}
-		input[type="text"], textarea {
-			padding: 0.5rem;
-			border-radius: 5px;
-			border: none;
-			margin-bottom: 1rem;
-			font-size: 1.2rem;
-			width: 100%;
-			box-sizing: border-box;
-		}
-		input[type="submit"] {
-			background-color: #333;
-			color: #fff;
-			padding: 0.5rem 1rem;
-			font-size: 1.2rem;
-			border: none;
-			border-radius: 5px;
-			cursor: pointer;
-		}
-		input[type="submit"]:hover {
-			background-color: #555;
-		}
-		.contact-info {
-			text-align: center;
-			margin-top: 2rem;
-		}
-		.contact-info h2 {
-			font-size: 1.5rem;
-			margin-bottom: 1rem;
-		}
-		.contact-info p {
-			font-size: 1.2rem;
-		}
-	</style>
+	<title>Alíz Nails</title>
+	<style>body {
+        background: linear-gradient(to bottom, #4ecdc4, #43a8a5);
+        font-family: Arial, sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    
+    h1 {
+        margin: 0;
+    }
+    
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    nav li {
+        margin: 0 10px;
+    }
+    
+    nav a {
+        color: #333;
+        text-decoration: none;
+    }
+    
+    nav a:hover {
+        text-decoration: underline;
+    }
+    
+    main {
+        margin-top: 100px;
+        padding: 20px;
+    }
+    
+    section {
+        margin-bottom: 50px;
+    }
+    
+    h2 {
+        margin-top: 0;
+    }
+    
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    li {
+        margin-right: 20px;
+        width: 300px;
+    }
+    
+    li:last-child {
+        margin-right: 0;
+    }
+    
+    a {
+        color: #333;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    footer {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        margin-top: 50px;
+        text-align: center;
+    }
+    </style>
 </head>
 <body>
 	<header>
-		<div class="container">
-			<h1>Alíz Nails</h1>
-			<nav>
-				<ul>
-					<li><a href="index.html">Főoldal</a></li>
-					<li><a href="kapcsolatfelvetel.html">Kapcsolat</a></li>
-				</ul>
-			</nav>
-		</div>
+		<h1>Alíz Nails</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Kezdőlap</a></li>
+				<li><a href="#">Szolgáltatások</a></li>
+				<li><a href="#">Galéria</a></li>
+				<li><button id="kapcsolat-btn">Kapcsolatfelvétel</button></li>
+			</ul>
+		</nav>
 	</header>
-	<main class="container">
-		<h1>Kapcsolat</h1>
-		<form>
-			<label for="name">Név</label>
-			<input type="text" id="name" name="name" placeholder="Írja be a nevét" required>
-			<label for="email">E-mail cím</label>
-			<input type="text" id="email" name="email" placeholder="Írja be az e-mail címét" required>
-			<label for="message">Üzenet</label>
-			<textarea id="message" name="message" placeholder="Írja ide az üzenetét" required></textarea>
-			<input type="submit" value="Küldés">
-		</form>
-		<div class="contact-info">
-            <p>Elérhetőség</p>
-			<p>Telefonszám: +36 30 123 4567</p>
-			<p>Helyszín: Ják Dózsa György utca 14</p>
-		</div>
-	</main>
-    <br>
-    <center>
-	<footer>
-		<div class="container">
-			<p>© 2023 Alíz Nails</p>
-		</div>
-	</footer>
-    </center>
-</body>
-</html>
+	<main>
+		<section>
+			<h2>Üdvözöljük az Alíz Nails Körömszalonban</h2>
+			<p>Az Alíz Nails körömszalon több mint 10 éve várja kedves vendégeit a legjobb körömápolási és díszítési szolgáltatásokkal. Legyen szó klasszikus francia manikűrről, tartós gél lakk körömről, vagy akár extrém formák és minták készítéséről, nálunk mindent megtalál.</p>
+			<p>A szalonban dolgozó szakemberek mindig a legújabb trendeknek megfelelően dolgoznak, hogy minden vendég elégedetten távozzon. Ha Ön is szeretné elkápráztatni barátait, családját vagy kollégáit egy mesés manikűrrel, akkor ne habozzon, és keresse fel szalonunkat még ma.</p>
+		</section>
+		<section>
+			<h2>Szolgáltatásaink</h2>
+			<ul>
+				<li>
+					<a href="#">
+						<img src="manikur.jpg" alt="Manikűr">
+						<h3>Manikűr</h3>
+						<p>A klasszikus francia manikűrtől kezdve a modern stílusokig minden manikűr típusát megtalálja nálunk. Legyen szó hétköznapi vagy ünnepi alkalmakról, mi elkészítjük a tökéletes köröm díszítést.</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="geplakk.jpg" alt="Gél lakk">
+						<h3>Gél lakk köröm</h3>
+						<p>Ha szeretné, hogy körmei hosszabb ideig tökéletesek legyenek, akkor válassza a gél lakk köröm díszítést. Tartós, csillogó hatást biztosít, és akár 2-3 hétig is tartós marad.</p>
+                    </a>
+                    </li>
+                    <li>
+                    <a href="#">
+                    <img src="extravagans.jpg" alt="Extravagáns köröm">
+                    <h3>Extravagáns köröm</h3>
+                    <p>Ha igazán egyedi és látványos köröm díszítésre vágyik, akkor az extravagáns köröm stílusok között biztosan megtalálja a kedvencét. Csillámpor, strasszkő, műköröm, színes lakkok és sok más kiegészítő segítségével varázsoljuk el a körmeit.</p>
+                    </a>
+                    </li>
+                    </ul>
+                    </section>
+                    <section>
+                    <h2>Galéria</h2>
+                    <ul>
+                    <li>
+                    <a href="#">
+                    <img src="galeria-1.jpg" alt="Galéria 1">
+                    </a>
+                    </li>
+                    <li>
+                    <a href="#">
+                    <img src="galeria-2.jpg" alt="Galéria 2">
+                    </a>
+                    </li>
+                    <li>
+                    <a href="#">
+                    <img src="galeria-3.jpg" alt="Galéria 3">
+                    </a>
+                    </li>
+                    <li>
+                    <a href="#">
+                    <img src="galeria-4.jpg" alt="Galéria 4">
+                    </a>
+                    </li>
+                    <li>
+                    <a href="#">
+                    <img src="galeria-5.jpg" alt="Galéria 5">
+                    </a>
+                    </li>
+                    <li>
+                    <a href="#">
+                    <img src="galeria-6.jpg" alt="Galéria 6">
+                    </a>
+                    </li>
+                    </ul>
+                    </section>
+                    </main>
+                    <footer>
+                    <p>Alíz Nails © 2023</p>
+                    </footer>
+                    <script>
+                    const kapcsolatBtn = document.getElementById("kapcsolat-btn");
+                    kapcsolatBtn.addEventListener("click", () => {
+                    window.location.href = "kapcsolatfelvetel.html";
+                    });
+                    </script>
+                    
+                    </body>
+                    </html>
